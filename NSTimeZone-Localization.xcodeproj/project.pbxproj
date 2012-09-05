@@ -431,7 +431,10 @@
 		A77FFD1915F786E000F4D92F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				DSTROOT = /tmp/NSTimeZoneLocalization.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/NSTimeZoneLocalization-Prefix.pch";
@@ -444,7 +447,10 @@
 		A77FFD1A15F786E000F4D92F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				DSTROOT = /tmp/NSTimeZoneLocalization.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/NSTimeZoneLocalization-Prefix.pch";
