@@ -30,8 +30,12 @@
 	// get the octest bundle for the unit test
 	NSBundle *unitTestBundle = [NSBundle bundleForClass:[self class]];
 	
+	// strings are in a resource bundle in the main/test bundle
+	NSString *resourcePath = [unitTestBundle pathForResource:@"NSTimeZoneLocalization" ofType:@"bundle"];
+	NSBundle *resourceBundle = [NSBundle bundleWithPath:resourcePath];
+	
 	// find the strings file for this language
-	NSString *stringsFilePath = [unitTestBundle pathForResource:@"LocalizableTimezones" ofType:@"strings" inDirectory:nil forLocalization:language];
+	NSString *stringsFilePath = [resourceBundle pathForResource:@"LocalizableTimezones" ofType:@"strings" inDirectory:nil forLocalization:language];
 	
 	STAssertNotNil(stringsFilePath, @"Couldn't find strings file for language '%@'", language);
 	

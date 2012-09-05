@@ -7,18 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A73888F715F789F200860ADB /* NSTimeZoneLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A77FFD2615F788D900F4D92F /* NSTimeZoneLocalization.bundle */; };
 		A77FFCD815F773CE00F4D92F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77FFCBB15F7739D00F4D92F /* SenTestingKit.framework */; };
-		A77FFCD915F773CE00F4D92F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77FFCA315F7739D00F4D92F /* UIKit.framework */; };
-		A77FFCDA15F773CE00F4D92F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77FFCA515F7739D00F4D92F /* Foundation.framework */; };
-		A77FFD0315F776E900F4D92F /* LocalizableTimezones.strings in Resources */ = {isa = PBXBuildFile; fileRef = A77FFCF915F776E900F4D92F /* LocalizableTimezones.strings */; };
-		A77FFD0415F776E900F4D92F /* NSTimeZone+Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FFD0215F776E900F4D92F /* NSTimeZone+Translation.m */; };
 		A77FFD0815F7774C00F4D92F /* UnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FFD0715F7774C00F4D92F /* UnitTest.m */; };
+		A77FFD1D15F7880400F4D92F /* NSTimeZone+Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = A77FFD0215F776E900F4D92F /* NSTimeZone+Translation.m */; };
+		A77FFD2015F7881800F4D92F /* libNSTimeZoneLocalization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A77FFD1015F786E000F4D92F /* libNSTimeZoneLocalization.a */; };
+		A77FFD3515F7896000F4D92F /* LocalizableTimezones.strings in Resources */ = {isa = PBXBuildFile; fileRef = A77FFCF915F776E900F4D92F /* LocalizableTimezones.strings */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A73888F515F789E600860ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77FFC9615F7739D00F4D92F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77FFD2515F788D900F4D92F;
+			remoteInfo = "Resource Bundle";
+		};
+		A77FFD1E15F7881200F4D92F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77FFC9615F7739D00F4D92F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77FFD0F15F786E000F4D92F;
+			remoteInfo = "Static Library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A77FFD0E15F786E000F4D92F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A77FFCA315F7739D00F4D92F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A77FFCA515F7739D00F4D92F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A77FFCA715F7739D00F4D92F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A77FFCBB15F7739D00F4D92F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A77FFCD715F773CE00F4D92F /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77FFCED15F7744200F4D92F /* UnitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
@@ -33,6 +59,10 @@
 		A77FFD0215F776E900F4D92F /* NSTimeZone+Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimeZone+Translation.m"; sourceTree = "<group>"; };
 		A77FFD0615F7774C00F4D92F /* UnitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTest.h; sourceTree = "<group>"; };
 		A77FFD0715F7774C00F4D92F /* UnitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTest.m; sourceTree = "<group>"; };
+		A77FFD1015F786E000F4D92F /* libNSTimeZoneLocalization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNSTimeZoneLocalization.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77FFD2115F7886E00F4D92F /* NSTimeZoneLocalization-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimeZoneLocalization-Prefix.pch"; sourceTree = "<group>"; };
+		A77FFD2615F788D900F4D92F /* NSTimeZoneLocalization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSTimeZoneLocalization.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77FFD3315F7890F00F4D92F /* Resources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Resources-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +70,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77FFD2015F7881800F4D92F /* libNSTimeZoneLocalization.a in Frameworks */,
 				A77FFCD815F773CE00F4D92F /* SenTestingKit.framework in Frameworks */,
-				A77FFCD915F773CE00F4D92F /* UIKit.framework in Frameworks */,
-				A77FFCDA15F773CE00F4D92F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77FFD0D15F786E000F4D92F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77FFD2315F788D900F4D92F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				A77FFCD715F773CE00F4D92F /* UnitTest.octest */,
+				A77FFD1015F786E000F4D92F /* libNSTimeZoneLocalization.a */,
+				A77FFD2615F788D900F4D92F /* NSTimeZoneLocalization.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +115,6 @@
 		A77FFCA215F7739D00F4D92F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A77FFCA315F7739D00F4D92F /* UIKit.framework */,
-				A77FFCA515F7739D00F4D92F /* Foundation.framework */,
-				A77FFCA715F7739D00F4D92F /* CoreGraphics.framework */,
 				A77FFCBB15F7739D00F4D92F /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
@@ -91,6 +133,7 @@
 		A77FFCF715F776E900F4D92F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A77FFD2115F7886E00F4D92F /* NSTimeZoneLocalization-Prefix.pch */,
 				A77FFCF815F776E900F4D92F /* Resources */,
 				A77FFD0015F776E900F4D92F /* Source */,
 			);
@@ -100,6 +143,7 @@
 		A77FFCF815F776E900F4D92F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A77FFD3315F7890F00F4D92F /* Resources-Info.plist */,
 				A77FFCF915F776E900F4D92F /* LocalizableTimezones.strings */,
 			);
 			path = Resources;
@@ -126,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A77FFCD615F773CE00F4D92F /* UnitTest */ = {
+		A77FFCD615F773CE00F4D92F /* Unit Test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A77FFCE515F773CE00F4D92F /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildConfigurationList = A77FFCE515F773CE00F4D92F /* Build configuration list for PBXNativeTarget "Unit Test" */;
 			buildPhases = (
 				A77FFCD215F773CE00F4D92F /* Sources */,
 				A77FFCD315F773CE00F4D92F /* Frameworks */,
@@ -138,10 +182,46 @@
 			buildRules = (
 			);
 			dependencies = (
+				A73888F615F789E600860ADB /* PBXTargetDependency */,
+				A77FFD1F15F7881200F4D92F /* PBXTargetDependency */,
 			);
-			name = UnitTest;
+			name = "Unit Test";
 			productName = UnitTest;
 			productReference = A77FFCD715F773CE00F4D92F /* UnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A77FFD0F15F786E000F4D92F /* Static Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77FFD1B15F786E000F4D92F /* Build configuration list for PBXNativeTarget "Static Library" */;
+			buildPhases = (
+				A77FFD0C15F786E000F4D92F /* Sources */,
+				A77FFD0D15F786E000F4D92F /* Frameworks */,
+				A77FFD0E15F786E000F4D92F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Static Library";
+			productName = NSTimeZoneLocalization;
+			productReference = A77FFD1015F786E000F4D92F /* libNSTimeZoneLocalization.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A77FFD2515F788D900F4D92F /* Resource Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77FFD3015F788D900F4D92F /* Build configuration list for PBXNativeTarget "Resource Bundle" */;
+			buildPhases = (
+				A77FFD2215F788D900F4D92F /* Sources */,
+				A77FFD2315F788D900F4D92F /* Frameworks */,
+				A77FFD2415F788D900F4D92F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Resource Bundle";
+			productName = "Resource Bundle";
+			productReference = A77FFD2615F788D900F4D92F /* NSTimeZoneLocalization.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +251,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A77FFCD615F773CE00F4D92F /* UnitTest */,
+				A77FFD0F15F786E000F4D92F /* Static Library */,
+				A77FFD2515F788D900F4D92F /* Resource Bundle */,
+				A77FFCD615F773CE00F4D92F /* Unit Test */,
 			);
 		};
 /* End PBXProject section */
@@ -181,7 +263,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77FFD0315F776E900F4D92F /* LocalizableTimezones.strings in Resources */,
+				A73888F715F789F200860ADB /* NSTimeZoneLocalization.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77FFD2415F788D900F4D92F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77FFD3515F7896000F4D92F /* LocalizableTimezones.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,12 +298,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77FFD0415F776E900F4D92F /* NSTimeZone+Translation.m in Sources */,
 				A77FFD0815F7774C00F4D92F /* UnitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A77FFD0C15F786E000F4D92F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77FFD1D15F7880400F4D92F /* NSTimeZone+Translation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77FFD2215F788D900F4D92F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A73888F615F789E600860ADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77FFD2515F788D900F4D92F /* Resource Bundle */;
+			targetProxy = A73888F515F789E600860ADB /* PBXContainerItemProxy */;
+		};
+		A77FFD1F15F7881200F4D92F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77FFD0F15F786E000F4D92F /* Static Library */;
+			targetProxy = A77FFD1E15F7881200F4D92F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A77FFCF915F776E900F4D92F /* LocalizableTimezones.strings */ = {
@@ -291,7 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/UnitTest-Prefix.pch";
 				INFOPLIST_FILE = "Test/UnitTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UnitTest;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -306,8 +423,68 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/UnitTest-Prefix.pch";
 				INFOPLIST_FILE = "Test/UnitTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UnitTest;
 				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		A77FFD1915F786E000F4D92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NSTimeZoneLocalization.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/NSTimeZoneLocalization-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = NSTimeZoneLocalization;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A77FFD1A15F786E000F4D92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NSTimeZoneLocalization.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core/NSTimeZoneLocalization-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = NSTimeZoneLocalization;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A77FFD3115F788D900F4D92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Core/Resources/Resources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = NSTimeZoneLocalization;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A77FFD3215F788D900F4D92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Core/Resources/Resources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = NSTimeZoneLocalization;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -323,11 +500,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A77FFCE515F773CE00F4D92F /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+		A77FFCE515F773CE00F4D92F /* Build configuration list for PBXNativeTarget "Unit Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A77FFCE615F773CE00F4D92F /* Debug */,
 				A77FFCE715F773CE00F4D92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77FFD1B15F786E000F4D92F /* Build configuration list for PBXNativeTarget "Static Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77FFD1915F786E000F4D92F /* Debug */,
+				A77FFD1A15F786E000F4D92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77FFD3015F788D900F4D92F /* Build configuration list for PBXNativeTarget "Resource Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77FFD3115F788D900F4D92F /* Debug */,
+				A77FFD3215F788D900F4D92F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

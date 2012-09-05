@@ -3,7 +3,7 @@
 //  Summertime
 //
 //  Created by Oliver Drobnik on 3/2/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Cocoanetics. All rights reserved.
 //
 
 #import "NSTimeZone+Translation.h"
@@ -13,7 +13,10 @@
 
 - (NSString *)localizedGeoName
 {
-	return NSLocalizedStringFromTable(self.name, @"LocalizableTimezones", @"NSTimeZone+Translation");
+	NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"NSTimeZoneLocalization" ofType:@"bundle"];
+	NSBundle *resourceBundle = [NSBundle bundleWithPath:resourcePath];
+	
+	return NSLocalizedStringFromTableInBundle(self.name, @"LocalizableTimezones", resourceBundle, @"NSTimeZone+Translation");
 }
 
 @end
