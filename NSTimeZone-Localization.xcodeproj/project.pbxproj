@@ -49,12 +49,12 @@
 		A77FFCD715F773CE00F4D92F /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77FFCED15F7744200F4D92F /* UnitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
 		A77FFCEE15F7744200F4D92F /* UnitTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UnitTest-Prefix.pch"; sourceTree = "<group>"; };
-		A77FFCFA15F776E900F4D92F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
-		A77FFCFB15F776E900F4D92F /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
-		A77FFCFC15F776E900F4D92F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
-		A77FFCFD15F776E900F4D92F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
-		A77FFCFE15F776E900F4D92F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
-		A77FFCFF15F776E900F4D92F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
+		A77FFCFA15F776E900F4D92F /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
+		A77FFCFB15F776E900F4D92F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
+		A77FFCFC15F776E900F4D92F /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
+		A77FFCFD15F776E900F4D92F /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
+		A77FFCFE15F776E900F4D92F /* nl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
+		A77FFCFF15F776E900F4D92F /* ru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LocalizableTimezones.strings; sourceTree = "<group>"; };
 		A77FFD0115F776E900F4D92F /* NSTimeZone+Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimeZone+Translation.h"; sourceTree = "<group>"; };
 		A77FFD0215F776E900F4D92F /* NSTimeZone+Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimeZone+Translation.m"; sourceTree = "<group>"; };
 		A77FFD0615F7774C00F4D92F /* UnitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTest.h; sourceTree = "<group>"; };
@@ -435,9 +435,11 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/NSTimeZoneLocalization.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/NSTimeZoneLocalization-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = NSTimeZoneLocalization;
 				SKIP_INSTALL = YES;
@@ -451,9 +453,11 @@
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/NSTimeZoneLocalization.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Core/NSTimeZoneLocalization-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = NSTimeZoneLocalization;
 				SKIP_INSTALL = YES;
